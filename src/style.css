@@ -1,0 +1,14 @@
+body {
+  background-color: rgb(138, 45, 243);
+  border: 20px;
+  padding: 20px;
+}
+
+.hello {
+  color: rgb(0, 255, 60);
+  font-size: 30px;
+  background: url('./bg-una-pareja-tango-desktop.png');
+  border: 10px;
+  padding: 10px;
+  background-color: blue;
+}
