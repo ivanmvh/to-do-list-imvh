@@ -14,13 +14,11 @@ export default class TodosData {
   }
 
   removeTodo(index) {
-    console.log(index);
-    console.log(this.todos);
     this.todos = this.todos.filter((todo, todoIndex) => todoIndex !== index);
     this.setToLocalStorage();
     this.resetIndex();
   }
- 
+
   updateDescription(index, description) {
     for (let i = 0; i < this.todos.length; i += 1) {
       if (this.todos[i].index === index) {
@@ -39,7 +37,7 @@ export default class TodosData {
     return this.todos.sort((a, b) => a.index - b.index);
   }
 
-  resetIndex1() {};
+  resetIndex1() {this.todos = this.todos};
 
   resetIndex() {
     this.todos.forEach((todo, index) => {
@@ -48,7 +46,7 @@ export default class TodosData {
     this.setToLocalStorage();
   }
 
-  clearCompleted() {};
+  clearCompleted() {this.todos = this.todos};
 
   clearCompleted1() {
     this.todos = this.todos.filter((todo) => todo.completed !== true);
@@ -56,7 +54,7 @@ export default class TodosData {
     this.resetIndex();
   }
 
-  markAsCompleted1(index) {};
+  markAsCompleted1(index) {this.todos = this.todos};
 
   markAsCompleted(index) {
     for (let i = 0; i < this.todos.length; i += 1) {
