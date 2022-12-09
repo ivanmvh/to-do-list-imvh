@@ -7,9 +7,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
-/* harmony import */ var _bg_una_pareja_tango_desktop_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(13);
 
 
+// import Icon from './bg-una-pareja-tango-desktop.png';
+
+var todo_tasks_arr = [
+  {description: "breakfast, desayunar", completed: false, index: 1},
+  {description: "lunch, almorzar", completed: false, index: 2},
+  {description: "dinner, cenar", completed: false, index: 3},
+  {description: "sleep, dormir", completed: false, index: 4},
+]
+
+const tasksListRef = document.querySelector('#task-list');
+todo_tasks_arr.forEach((task) => {
+  const taskRef = document.createElement('li');
+  taskRef.innerHTML =  `
+    <li class="task">
+      <input type="checkbox" id="checked" class='checkbox' ${task.completed ? 'checked' : ''}
+      >
+      <input type="text" id="listItem" class='description' value= "${task.description}">
+      <i class="fa-solid fa-ellipsis-vertical move"></i>
+      <i class="fa-solid fa-trash-can delete"></i>
+    </li>`;
+    tasksListRef.appendChild(taskRef);
+});
 
 
 function component() {
@@ -17,12 +38,12 @@ function component() {
 
   // Lodash, currently included via a script, is required for this line to work
   // Lodash, now imported by this script
-  element.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default().join(['Hello Ivan 19:00', 'Webpack'], ' ');
+  element.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default().join(['Hello Ivan 19:52', 'Webpack'], ' ');
   element.classList.add('hello');
 
   // Add the image to our existing div.
   const myIcon = new Image();
-  myIcon.src = _bg_una_pareja_tango_desktop_png__WEBPACK_IMPORTED_MODULE_2__;
+  myIcon.src = Icon;
   element.appendChild(myIcon);
   return element;
 }
@@ -17600,7 +17621,7 @@ var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\r\n  background-color: rgb(218, 128, 19);\r\n  border: 20px;\r\n  padding:20px;\r\n}\r\n\r\n.hello {\r\n  color: rgb(0, 255, 60);\r\n  font-size: 30px;\r\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n  border: 10px;\r\n  padding: 10px;\r\n  background-color: blue;\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "body {\n  background-color: rgb(138, 45, 243);\n  border: 20px;\n  padding: 20px;\n}\n\n.hello {\n  color: rgb(0, 255, 60);\n  font-size: 30px;\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  border: 10px;\n  padding: 10px;\n  background-color: blue;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
