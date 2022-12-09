@@ -1,5 +1,5 @@
 {
-  "name": "webpack-demo-imvh",
+  "name": "to-do-list-imvh",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ivanmvh/webpack-demo-imvh.git"
+    "url": "git+https://github.com/ivanmvh/to-do-list-imvh.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ivanmvh/webpack-demo-imvh/issues"
+    "url": "https://github.com/ivanmvh/to-do-list-imvh/issues"
   },
-  "homepage": "https://github.com/ivanmvh/webpack-demo-imvh#readme",
+  "homepage": "https://github.com/ivanmvh/to-do-list-imvh#readme",
   "devDependencies": {
     "css-loader": "^6.7.2",
     "html-webpack-plugin": "^5.5.0",

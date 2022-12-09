@@ -1,6 +1,4 @@
-// import _, { forEach } from 'lodash';
 import './style.css';
-// import Icon from './bg-una-pareja-tango-desktop.png';
 
 const addTodo = () => {
   const formContainer = document.querySelector('#add-new-form-container');
@@ -14,31 +12,12 @@ const addTodo = () => {
   `;
 };
 
-/*
-function component() {
-  const element = document.createElement('div');
-
-  // Lodash, currently included via a script, is required for this line to work
-  // Lodash, now imported by this script
-  element.innerHTML = ' ';
-  element.classList.add('hello');
-
-  // Add the image to our existing div.
-  const myIcon = new Image();
-  myIcon.src = Icon;
-  element.appendChild(myIcon);
-  return element;
-}
-*/
-
 const todoTasksArr = [
   { description: 'breakfast, desayunar', completed: false, index: 1 },
   { description: 'lunch, almorzar', completed: false, index: 2 },
   { description: 'dinner, cenar', completed: false, index: 3 },
   { description: 'sleep, dormir', completed: false, index: 4 },
 ];
-
-/* document.body.appendChild(component()); */
 
 const tasksListRef = document.querySelector('#task-list');
 todoTasksArr.forEach((task) => {
