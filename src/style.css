@@ -37,9 +37,10 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   padding: 1.5rem;
-  margin: 84px 12px 0 12px;
+  margin: 10px 12px 0 12px;
   width: 100%;
   max-width: 60%;
+  max-height: 80%;
 }
 
 #main-sec h1 {
@@ -74,7 +75,7 @@ body {
   cursor: pointer;
 }
 
-#tasdk-list {
+#todos-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -82,10 +83,11 @@ body {
   overflow-y: scroll;
 }
 
-#task-list li {
+#todos-list li {
   display: flex;
   align-items: center;
   height: 8vh;
+  column-gap: 20px;
 }
 
 .todo {
@@ -116,5 +118,37 @@ body {
 
 .delete {
   cursor: pointer;
+  display: inline-block;
+}
+
+.move {
+  display: block;
+  cursor: move;
+}
+
+.clear-completed {
+  background-color: var(--light-background-color);
+  padding: 0.8rem;
+  border: none;
+  color: #aaa;
+  font-size: 1rem;
+}
+
+.clear-completed:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.selection {
+  background-color: #ccc;
+}
+
+#todos::-webkit-scrollbar {
   display: none;
+}
+
+input:checked + input {
+  text-decoration: line-through;
+  color: #ccc;
+  font-style: italic;
 }
