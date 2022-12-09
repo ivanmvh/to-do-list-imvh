@@ -1,8 +1,8 @@
 import './style.css';
 
 const addTodo = () => {
-  const formContainer = document.querySelector('#add-new-form-container');
-  formContainer.innerHTML = `
+  const addNewTaskRef = document.querySelector('#add-new-task');
+  addNewTaskRef.innerHTML = `
     <form class="add-new-task" action="">
       <input type="text" id="todo" name="description" placeholder="Add to your list..." />
       <button id="add-todo" type="button">
