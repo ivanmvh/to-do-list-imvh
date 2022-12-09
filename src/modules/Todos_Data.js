@@ -37,8 +37,6 @@ export default class TodosData {
     return this.todos.sort((a, b) => a.index - b.index);
   }
 
-  resetIndex1() { const dummy = this.todos; };
-
   resetIndex() {
     this.todos.forEach((todo, index) => {
       todo.index = index + 1;
@@ -46,15 +44,11 @@ export default class TodosData {
     this.setToLocalStorage();
   }
 
-  clearCompleted() { const dummy = this.todos; };
-
-  clearCompleted1() {
+  clearCompleted() {
     this.todos = this.todos.filter((todo) => todo.completed !== true);
     this.setToLocalStorage();
     this.resetIndex();
   }
-
-  markAsCompleted1(index) { const dummy = this.todos; };
 
   markAsCompleted(index) {
     for (let i = 0; i < this.todos.length; i += 1) {

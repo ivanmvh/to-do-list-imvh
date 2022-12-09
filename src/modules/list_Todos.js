@@ -5,7 +5,7 @@ const listTodos = () => {
   const todos = todosData.getTodos();
   todosListElement.innerHTML = '';
   todos.forEach((todo) => {
-    const todoElement = document.createElement('li');    
+    const todoElement = document.createElement('li');
     todoElement.innerHTML = `
       <li class="todo">
         <input type="checkbox" id="checked" class='checkbox' ${todo.completed ? 'checked' : ''}
