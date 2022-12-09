@@ -1,6 +1,6 @@
-//import _, { forEach } from 'lodash';
+// import _, { forEach } from 'lodash';
 import './style.css';
-import Icon from './bg-una-pareja-tango-desktop.png';
+// import Icon from './bg-una-pareja-tango-desktop.png';
 
 const addTodo = () => {
   const formContainer = document.querySelector('#add-new-form-container');
@@ -32,21 +32,17 @@ function component() {
 */
 
 const todoTasksArr = [
-  { description: `breakfast, desayunar`, completed: false, index: 1 },
-  { description: `lunch, almorzar`, completed: false, index: 2 },
-  { description: `dinner, cenar`, completed: false, index: 3 },
-  { description: `sleep, dormir`, completed: false, index: 4 },
-]
+  { description: 'breakfast, desayunar', completed: false, index: 1 },
+  { description: 'lunch, almorzar', completed: false, index: 2 },
+  { description: 'dinner, cenar', completed: false, index: 3 },
+  { description: 'sleep, dormir', completed: false, index: 4 },
+];
 
 /* document.body.appendChild(component()); */
 
 const tasksListRef = document.querySelector('#task-list');
-
-
-todoTasksArr.forEach((task) => {
-  
+todoTasksArr.forEach((task) => {  
   const taskRef = document.createElement('li');
-  /*taskRef.innerHTML =  `<p class="task">${task.description}</p>`;*/
   taskRef.innerHTML =  `
     <li class="task">
       <input type="checkbox" id="checked" class='checkbox' ${task.completed ? 'checked' : ''}
@@ -55,7 +51,6 @@ todoTasksArr.forEach((task) => {
       <i class="fa-solid fa-ellipsis-vertical move"></i>
       <i class="fa-solid fa-trash-can delete"></i>
     </li>`;
-
   tasksListRef.appendChild(taskRef);
 });
 
