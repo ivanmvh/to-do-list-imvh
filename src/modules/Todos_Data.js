@@ -18,7 +18,7 @@ export default class TodosData {
     this.setToLocalStorage();
     this.resetIndex();
   }
-  
+ 
   updateDescription(index, description) {
     for (let i = 0; i < this.todos.length; i += 1) {
       if (this.todos[i].index === index) {
@@ -44,15 +44,13 @@ export default class TodosData {
     this.setToLocalStorage();
   }
 
-  clearCompleted() {
-    return
+  clearCompleted1() {
     this.todos = this.todos.filter((todo) => todo.completed !== true);
     this.setToLocalStorage();
     this.resetIndex();
   }
 
-  markAsCompleted(index) {
-    return
+  markAsCompleted1(index) {
     for (let i = 0; i < this.todos.length; i += 1) {
       if (this.todos[i].index === index) {
         this.todos[i].completed = !this.todos[i].completed;

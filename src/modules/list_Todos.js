@@ -1,9 +1,9 @@
-import { todoCollection } from './TodoCollection.js';
+import { todosData } from './Todos_Data.js';
 
-const displayTodos = () => {
-  const todosElement = document.querySelector('#todos');
-  const todos = todoCollection.getTodos();
-  todosElement.innerHTML = '';
+const listTodos = () => {
+  const todosListElement = document.querySelector('#todos_list');
+  const todos = todosData.getTodos();
+  todosListElement.innerHTML = '';
   todos.forEach((todo) => {
     const todoElement = document.createElement('li');
     todoElement.innerHTML = `
@@ -14,20 +14,20 @@ const displayTodos = () => {
         <i class="fa-solid fa-ellipsis-vertical move"></i>
         <i class="fa-solid fa-trash-can delete"></i>
       </li>`;
-    todosElement.appendChild(todoElement);
+    todosListElement.appendChild(todoElement);
   });
-  const checkboxs = todosElement.querySelectorAll('.checkbox');
+  const checkboxs = todosListElement.querySelectorAll('.checkbox');
   checkboxs.forEach((checkbox, index) => {
     checkbox.addEventListener('change', () => {
-      todoCollection.markAsCompleted(index + 1);
+      todosData.markAsCompleted(index + 1);
     });
   });
-  const descriptions = todosElement.querySelectorAll('.description');
+  const descriptions = todosListElement.querySelectorAll('.description');
   descriptions.forEach((description, index) => {
     description.addEventListener('change', () => {
-      todoCollection.updateDescription(index + 1, description.value);
+      todosData.updateDescription(index + 1, description.value);
     });
   });
 };
 
-export default displayTodos;
+export default listTodos;

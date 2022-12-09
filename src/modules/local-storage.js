@@ -3,9 +3,9 @@ const setLocalStorage = (key, value) => {
 };
 
 const getLocalStorage = (key) => {
-  let dataAsStr = localStorage.getItem(key);
+  const dataAsStr = localStorage.getItem(key);
   if (dataAsStr) {
-    let dataAsObj = JSON.parse(dataAsStr);
+    const dataAsObj = JSON.parse(dataAsStr);
     return dataAsObj;
   }
   return [];
