@@ -14,7 +14,7 @@ const listTodos = () => {
         <i class="fa-solid fa-ellipsis-vertical move"></i>
         <i class="fa-solid fa-trash-can delete"></i>
       </li>`;
-    /*
+    
       todoElement.innerHTML = `
       <li class="todo">
         <input type="checkbox" id="checked" class='checkbox' ${todo.completed ? 'checked' : ''}
@@ -23,7 +23,7 @@ const listTodos = () => {
         <i class="fa-solid fa-ellipsis-vertical move"></i>
         <i class="fa-solid fa-trash-can delete"></i>
       </li>`;
-    */
+
     todosListElement.appendChild(todoElement);
   });
   const checkboxs = todosListElement.querySelectorAll('.checkbox');
