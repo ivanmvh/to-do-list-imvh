@@ -1,4 +1,4 @@
-import _, { forEach } from 'lodash';
+//import _, { forEach } from 'lodash';
 import './style.css';
 import Icon from './bg-una-pareja-tango-desktop.png';
 
@@ -14,6 +14,7 @@ const addTodo = () => {
   `;
 };
 
+/*
 function component() {
   const element = document.createElement('div');
 
@@ -28,12 +29,13 @@ function component() {
   element.appendChild(myIcon);
   return element;
 }
+*/
 
-var todo_tasks_arr = [
-  {description: "breakfast, desayunar", completed: false, index: 1},
-  {description: "lunch, almorzar", completed: false, index: 2},
-  {description: "dinner, cenar", completed: false, index: 3},
-  {description: "sleep, dormir", completed: false, index: 4},
+const todoTasksArr = [
+  { description: `breakfast, desayunar`, completed: false, index: 1 },
+  { description: `lunch, almorzar`, completed: false, index: 2 },
+  { description: `dinner, cenar`, completed: false, index: 3 },
+  { description: `sleep, dormir`, completed: false, index: 4 },
 ]
 
 /* document.body.appendChild(component()); */
@@ -41,7 +43,7 @@ var todo_tasks_arr = [
 const tasksListRef = document.querySelector('#task-list');
 
 
-todo_tasks_arr.forEach((task) => {
+todoTasksArr.forEach((task) => {
   
   const taskRef = document.createElement('li');
   /*taskRef.innerHTML =  `<p class="task">${task.description}</p>`;*/
