@@ -41,9 +41,9 @@ const todoTasksArr = [
 /* document.body.appendChild(component()); */
 
 const tasksListRef = document.querySelector('#task-list');
-todoTasksArr.forEach((task) => {  
+todoTasksArr.forEach((task) => {
   const taskRef = document.createElement('li');
-  taskRef.innerHTML =  `
+  taskRef.innerHTML = `
     <li class="task">
       <input type="checkbox" id="checked" class='checkbox' ${task.completed ? 'checked' : ''}
       >
