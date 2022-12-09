@@ -1,5 +1,7 @@
 import './style.css';
 
+
+/*
 const addTodo = () => {
   const addNewTaskRef = document.querySelector('#add-new-task');
   addNewTaskRef.innerHTML = `
@@ -34,3 +36,4 @@ todoTasksArr.forEach((task) => {
 });
 
 addTodo();
+*/
