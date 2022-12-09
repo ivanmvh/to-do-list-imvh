@@ -14,15 +14,15 @@ const listTodos = () => {
         <i class="fa-solid fa-ellipsis-vertical move"></i>
         <i class="fa-solid fa-trash-can delete"></i>
       </li>`;
-    
-      todoElement.innerHTML = `
+
+    todoElement.innerHTML = `
       <li class="todo">
         <input type="checkbox" id="checked" class='checkbox' ${todo.completed ? 'checked' : ''}
           >
         <input type="text" id="listItem" class='description' value= "${todo.description} ">
         <i class="fa-solid fa-ellipsis-vertical move"></i>
         <i class="fa-solid fa-trash-can delete"></i>
-      </li>`;
+    </li>`;
 
     todosListElement.appendChild(todoElement);
   });
