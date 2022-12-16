@@ -1,35 +1,21 @@
+/*
+ * @jest-environment jsdom
+ */
+
 import { todosData } from '../Todos_Data';
-global.localStorage = new LocalStorageMock;    
 
-class LocalStorageMock {
-  constructor() {
-    this.store = {};
-  }
-
-  clear() {
-    this.store = {};
-  }
-
-  getItem(key) {
-    return this.store[key] || null;
-  }
-
-  setItem(key, value) {
-    this.store[key] = String(value);
-  }
-
-  removeItem(key) {
-    delete this.store[key];
-  }
-}
-
-describe('storage', () => {
-  beforeAll(() => {
-    global.localStorage = new LocalStorageMock;    
+describe('add and remove', () => {
+  test('addTodo method test', () => {
+    todosData.addTodo("description1");
+    todosData.addTodo("description2");
+    expect(JSON.parse(localStorage.getItem('todos'))[0].description).toBe('description1');
+    expect(JSON.parse(localStorage.getItem('todos'))[1].description).toBe('description2');
   });
 
-  it('addTodo method test', () => {
-    todosData.addTodo("description");
-    expect(global.localStorage.getItem(0)).toEqual('descripcion');
+  test('remove method test', () => {
+    console.log(1,localStorage.getItem('todos'));
+    todosData.removeTodo(1);
+    console.log(2,localStorage.getItem('todos'));
+    expect(JSON.parse(localStorage.getItem('todos')).length).toBe(1);
   });
 });
