@@ -46,15 +46,12 @@ webpack
 
 ### Tech Stack <a name="tech-stack"></a>
 
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="#">JavaScript</a></li>
-    <li><a href="#">HTML</a></li>
-    <li><a href="#">CSS</a></li>
-    <li><a href="#">Webpack</a></li>
-  </ul>
-</details>
+<ul>
+  <li><a href="#">JavaScript</a></li>
+  <li><a href="#">HTML</a></li>
+  <li><a href="#">CSS</a></li>
+  <li><a href="#">Webpack</a></li>
+</ul>
 
 
 <!-- Features -->
