@@ -41,6 +41,10 @@ In this project, I build a simple HTML list of To Do tasks. The list was styled 
 
 ## 🛠 Built With <a name="built-with"></a>
 webpack
+js
+html
+css
+jest
 
 ### Tech Stack <a name="tech-stack"></a>
 
