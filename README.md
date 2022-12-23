@@ -36,13 +36,17 @@
 
 # 📖 ToDo List <a name="about-project"></a>
 
-In this project, I build a simple HTML list of To Do tasks. The list was styled according to the specifications listed. This simple web page was  built using webpack and served by a webpack dev server.
+In this project we will be using webpack to create, edit, and delete tasks from a list of tasks created by the user, the main goals of this project are:
 
+Use webpack to bundle JavaScript.
+Learn how to use proper ES6 syntax.
+Use ES6 modules to write modular JavaScript.
 
 ## 🛠 Built With <a name="built-with"></a>
 
-webpack
-
+- JavaScript
+- Webpack
+- HTML & CSS
 
 ### Tech Stack <a name="tech-stack"></a>
 
