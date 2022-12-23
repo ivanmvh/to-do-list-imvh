@@ -144,8 +144,6 @@ You can deploy this project using: GitHub page
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add moving todo around for rearranging**
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
