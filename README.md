@@ -38,9 +38,9 @@
 
 In this project we will be using webpack to create, edit, and delete tasks from a list of tasks created by the user, the main goals of this project are:
 
-Use webpack to bundle JavaScript.
-Learn how to use proper ES6 syntax.
-Use ES6 modules to write modular JavaScript.
+- Use webpack to bundle JavaScript.
+- Learn how to use proper ES6 syntax.
+- Use ES6 modules to write modular JavaScript.
 
 ## 🛠 Built With <a name="built-with"></a>
 
