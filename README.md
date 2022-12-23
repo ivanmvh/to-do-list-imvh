@@ -86,10 +86,7 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
-
-Web browser
-
+Have git installed. (For version control) Have text editor installed. (Preferably VSCode) Have CSS,HTML & JS Linters installed and configured. For further information, visit this link to get better understanding on each linters used on this project.
 
 ### Setup
 
@@ -117,9 +114,12 @@ Example command:
 
 ### Usage
 
-To run the project, execute the following command:
+With the todo list app you can:
 
-open index.html file
+- Create a new task.
+- Add a new task.
+- Delete a new task.
+- Delete all the tasks completed.
 
 ### Deployment
 
